@@ -1,0 +1,62 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 text-danger fw-bold">ASA Contacts
+                <a class="btn btn-danger btn-sm" routerLink="/contacts/add" class="btn btn-danger">
+                    <i class="fa fa-plus-circle"></i>NEW</a>
+            </p>
+        <p class="fst-italic">
+            dfkgsndblnskbnslkjbnlskjgbn knsonvlksnvk
+        </p>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col">
+<input class="form-control" placeholder="Search User" type="text">
+                        </div>
+                        <div class="col">
+<input type="submit" class="btn btn-outline-dark" value="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+<!-- Cards -->
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card list-group-item-danger shadow-lg">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                       <div class="col-sm-4">
+                        <img alt="" src="https://toppng.com/uploads/preview/icons-logos-emojis-user-icon-png-transparent-11563566676e32kbvynug.png" class="contact-img">
+                       </div>
+                       <div class="col-sm-7">
+                        <ul class="list-group">
+                            <li class="list-group-item">Name : <span class="fw-bold"> Akash </span> </li>
+                            <li class="list-group-item">Email : <span class="fw-bold"> Akash@gmail.com </span> </li>
+                            <li class="list-group-item">Mobile : <span class="fw-bold"> +91 9594189844 </span> </li>
+                        </ul>
+                       </div>
+                       <div class="col-sm-1 d-flex flex-column justify-content-center align-items-center">
+                        <a class="btn btn-warning my-1" routerLink="/contacts/view/:contactId">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a class="btn btn-primary my-1" routerLink="/contacts/edit/:contactId">
+                            <i class="fa fa-pen"></i>
+                        </a>
+                        <button class="btn btn-danger my-1">
+                            <i class="fa fa-trash-alt"></i>
+                        </button>
+                       </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

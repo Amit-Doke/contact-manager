@@ -1,0 +1,70 @@
+{
+    "contacts" : [
+        {
+            "id" : "ASA@173314",
+            "name": "Akash Ardalkar",
+            "photo" : "",
+            "mobile" : "9594189844",
+            "email" : "akash@gmail.com",
+            "title": "software engineer",
+            "company":"pi technology",
+            "group":"1"
+        },
+        {
+            "id" : "drg",
+            "name": "Akash Ardalkar",
+            "photo" : "",
+            "mobile" : "9594189844",
+            "email" : "akash@gmail.com",
+            "title": "software engineer",
+            "company":"pi technology",
+            "group":"3"
+        },
+        {
+            "id" : "srgehr",
+            "name": "Akash Ardalkar",
+            "photo" : "",
+            "mobile" : "9594189844",
+            "email" : "akash@gmail.com",
+            "title": "software engineer",
+            "company":"pi technology",
+            "group":"2"
+        },
+        {
+            "id" : "etgery",
+            "name": "Akdyhash Ardalkar",
+            "photo" : "",
+            "mobile" : "95941243589844",
+            "email" : "akash@gmail.com",
+            "title": "software engineer",
+            "company":"pi technology",
+            "group":"5"
+        }
+    ],
+    "groups": [
+        {
+            "id": "1",
+            "name":"collegue"
+        },
+        {
+            "id": "2",
+            "name":"collegue"
+        },
+        {
+            "id": "3",
+            "name":"friend"
+        },
+        {
+            "id": "4",
+            "name":"service"
+        },
+        {
+            "id": "5",
+            "name":"community"
+        },
+        {
+            "id": "6",
+            "name":"family"
+        }
+    ]
+}
