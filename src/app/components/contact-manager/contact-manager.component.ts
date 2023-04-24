@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { iContact } from 'src/app/models/iContact';
-import { ContactService } from 'src/app/services/contact.service';
+import { DataServiceService } from 'src/app/services/dataService.service';
+
 
 @Component({
   selector: 'app-contact-manager',
@@ -10,19 +11,23 @@ import { ContactService } from 'src/app/services/contact.service';
 })
 export class ContactManagerComponent implements OnInit {
 
-  public loading:boolean=false;
-  public contact:iContact[]= [];
-  public errorMessage:string | null=null;
+ 
+
+  contacts:iContact[] = [];
 
 
-  constructor(private contactService: ContactService) {}
+  constructor(public data:DataServiceService) {}
 
   ngOnInit(): void {
-    this.loading = true;
-    this.contactService.getAllContacts().subscribe((data:iContact[])=>{
-      this.contact=data;
-      this.loading=false;
-    });
+   
+      this.data.http.get(this.data.baseUrl+"contacts/getContacts/"+1).subscribe(
+        (response:iContact[]) => {
+          this.data.contacts=response;
+          this.contacts=response;
+        }
+      );  
+
+    }
   }
-  }
+  
 

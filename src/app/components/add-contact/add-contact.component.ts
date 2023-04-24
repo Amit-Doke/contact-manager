@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,6 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './add-contact.component.html',
   styleUrls: ['./add-contact.component.css']
 })
-export class AddContactComponent {
-
+export class AddContactComponent 
+{
+  constructor()
+  {
+    
+  }
 }

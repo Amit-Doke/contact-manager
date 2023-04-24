@@ -1,10 +1,12 @@
+import { Group } from "../entities/Group";
+
 export interface iContact {
-    id ? : string;
-    name : string;
-    email : string;
-    photo : string;
-    mobile : string;
-    company : string;
-    title : string;
-    groupid : string;
+    id ? : number;
+    name ?: string;
+    email ?: string;
+    url ?: string;
+    phoneNumber ?: string;
+    company ?: string;
+    title ?: string;
+    contactGroup ?: Group;
 }
