@@ -1,4 +1,4 @@
-import { ContactService } from './../../services/contact.service';
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AddContactComponent 
 {
-  constructor(public data:ContactService)
+  constructor()
   {
     
   }
