@@ -94,3 +94,6 @@
 2023-04-27T01:23:08.268+05:30  INFO 11452 --- [http-nio-8080-exec-10] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => Contact(id=3, name=aksss, email=akss@test, url=null, phoneNumber=1213, company=Khudki, title=CEO, contactGroup=ContactGroup(id=1, name=collegue))
 2023-04-27T01:23:12.111+05:30  INFO 11452 --- [http-nio-8080-exec-8] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
 2023-04-27T01:23:29.654+05:30  INFO 11452 --- [http-nio-8080-exec-6] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-04-27T01:23:32.815+05:30  INFO 11452 --- [http-nio-8080-exec-9] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-04-27T01:23:33.962+05:30  INFO 11452 --- [http-nio-8080-exec-2] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
+2023-04-27T01:23:35.945+05:30  INFO 11452 --- [http-nio-8080-exec-5] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
