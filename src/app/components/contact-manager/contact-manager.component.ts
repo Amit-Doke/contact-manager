@@ -23,6 +23,7 @@ export class ContactManagerComponent implements OnInit {
       this.data.http.get(this.data.baseUrl+"contacts/getContacts/"+1).subscribe(
         (response:iContact[]) => {
           this.data.contacts=response;
+          this.data.user.contacts=response;
           this.contacts=response;
         }
       );  

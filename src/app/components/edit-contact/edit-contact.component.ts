@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./edit-contact.component.css']
 })
 export class EditContactComponent {
-
+  //TODO: same as addContact
 }
