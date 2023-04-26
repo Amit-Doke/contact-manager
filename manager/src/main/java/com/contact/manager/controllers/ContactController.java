@@ -1,7 +1,9 @@
 package com.contact.manager.controllers;
 
-import java.util.HashSet;
+import java.util.List;
+
 import java.util.Set;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -57,6 +59,7 @@ public class ContactController
     @PostMapping("createContact/{userId}/{groupId}")
     public boolean createContact(@RequestBody Contact contact,@PathVariable Integer userId,@PathVariable Integer groupId)
     {
+        log.info(contact+"\n"+userId+"\n"+groupId);
         try 
         {
             if (contact.getEmail()!=null && contact.getPhoneNumber()!=null && contact.getName()!=null) {
@@ -93,5 +96,23 @@ public class ContactController
             return null;
         }
     } 
+
+    
+
+    @GetMapping("getGroup")
+    public List<ContactGroup> getGroup()
+    {
+        try 
+        {
+            List<ContactGroup> groups =  contactGroupRepo.findAll();
+            log.info("Getting Contact List of Contact with contactId => {}", groups);
+            return groups;
+        } 
+        catch (Exception e) 
+        {
+            log.error(e.getMessage(), e);
+            return null;
+        }
+    }
 
 }

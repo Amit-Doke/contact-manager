@@ -24,4 +24,5 @@ public class User
     @OneToMany(cascade = CascadeType.ALL)
     Set<Contact> contacts;
 
+
 }

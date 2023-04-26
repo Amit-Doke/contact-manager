@@ -1,4 +1,5 @@
-import { Group } from "../entities/Group";
+
+import { iGroup } from "./iGroup";
 
 export interface iContact {
     id ? : number;
@@ -8,5 +9,5 @@ export interface iContact {
     phoneNumber ?: string;
     company ?: string;
     title ?: string;
-    contactGroup ?: Group;
+    contactGroup ?: iGroup;
 }
