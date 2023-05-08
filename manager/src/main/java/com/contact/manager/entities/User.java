@@ -1,5 +1,6 @@
 package com.contact.manager.entities;
 
+import java.util.List;
 import java.util.Set;
 
 import jakarta.persistence.CascadeType;
@@ -22,7 +23,7 @@ public class User
     String phoneNumber;
 
     @OneToMany(cascade = CascadeType.ALL)
-    Set<Contact> contacts;
+    List<Contact> contacts;
 
 
 }

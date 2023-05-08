@@ -29,6 +29,23 @@ export class ContactManagerComponent implements OnInit {
       );  
 
     }
+
+    deleteContact(id:number){
+
+      this.data.http.delete(this.data.baseUrl+"contacts/"+this.data.user.id+"/"+id).subscribe(
+        (response:boolean)=>{
+          if (response) {
+            window.alert("Contact deleted Successfully");
+            let i=this.contacts.findIndex(temp=>temp.id==id);
+            this.contacts.splice(i,1);
+          }
+          else {
+            window.alert("Contact Not Deleted successfully");
+          }
+        }
+      );
+
+    }
   }
   
 

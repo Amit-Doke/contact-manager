@@ -1,99 +1,265 @@
-2023-04-27T00:50:41.598+05:30  INFO 7688 --- [main] com.contact.manager.ManagerApplication   : Starting ManagerApplication using Java 17.0.5 with PID 7688 (C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager\target\classes started by amitd in C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager)
-2023-04-27T00:50:41.620+05:30  INFO 7688 --- [main] com.contact.manager.ManagerApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-04-27T00:50:43.662+05:30  INFO 7688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-27T00:50:43.803+05:30  INFO 7688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 3 JPA repository interfaces.
-2023-04-27T00:50:44.994+05:30  INFO 7688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-04-27T00:50:45.010+05:30  INFO 7688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-04-27T00:50:45.013+05:30  INFO 7688 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-04-27T00:50:45.259+05:30  INFO 7688 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-04-27T00:50:45.263+05:30  INFO 7688 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3497 ms
-2023-04-27T00:50:46.000+05:30  INFO 7688 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-27T00:50:46.137+05:30  INFO 7688 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-04-27T00:50:46.833+05:30  INFO 7688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-04-27T00:50:47.454+05:30  INFO 7688 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f9f8d23
-2023-04-27T00:50:47.458+05:30  INFO 7688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-04-27T00:50:47.567+05:30  INFO 7688 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-04-27T00:50:49.016+05:30  INFO 7688 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-27T00:50:49.028+05:30  INFO 7688 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-27T00:50:49.697+05:30  WARN 7688 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-27T00:50:50.626+05:30  INFO 7688 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2023-04-27T00:50:50.793+05:30  INFO 7688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-04-27T00:50:50.819+05:30  INFO 7688 --- [main] com.contact.manager.ManagerApplication   : Started ManagerApplication in 9.877 seconds (process running for 10.636)
-2023-04-27T00:50:53.074+05:30  INFO 7688 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-27T00:50:53.076+05:30  INFO 7688 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-04-27T00:50:53.082+05:30  INFO 7688 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2023-04-27T00:51:25.798+05:30  INFO 7688 --- [http-nio-8080-exec-1] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T00:51:27.949+05:30  INFO 7688 --- [http-nio-8080-exec-3] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
-2023-04-27T00:51:29.743+05:30  INFO 7688 --- [http-nio-8080-exec-4] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
-2023-04-27T00:52:09.783+05:30  INFO 7688 --- [http-nio-8080-exec-6] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T00:53:23.277+05:30  INFO 7688 --- [http-nio-8080-exec-8] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T00:55:05.503+05:30  INFO 7688 --- [http-nio-8080-exec-10] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T00:55:39.679+05:30  INFO 7688 --- [http-nio-8080-exec-1] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T00:55:49.652+05:30  INFO 7688 --- [http-nio-8080-exec-2] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T00:55:55.845+05:30  INFO 7688 --- [http-nio-8080-exec-3] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T00:56:02.210+05:30  INFO 7688 --- [http-nio-8080-exec-4] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T00:59:51.087+05:30  INFO 11452 --- [main] com.contact.manager.ManagerApplication   : Starting ManagerApplication using Java 17.0.5 with PID 11452 (C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager\target\classes started by amitd in C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager)
-2023-04-27T00:59:51.092+05:30  INFO 11452 --- [main] com.contact.manager.ManagerApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-04-27T00:59:52.977+05:30  INFO 11452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-27T00:59:53.086+05:30  INFO 11452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 3 JPA repository interfaces.
-2023-04-27T00:59:54.132+05:30  INFO 11452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-04-27T00:59:54.154+05:30  INFO 11452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-04-27T00:59:54.156+05:30  INFO 11452 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-04-27T00:59:54.303+05:30  INFO 11452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-04-27T00:59:54.304+05:30  INFO 11452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3093 ms
-2023-04-27T00:59:54.752+05:30  INFO 11452 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-27T00:59:54.817+05:30  INFO 11452 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-04-27T00:59:55.399+05:30  INFO 11452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-04-27T00:59:55.907+05:30  INFO 11452 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48b3b1b8
-2023-04-27T00:59:55.913+05:30  INFO 11452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-04-27T00:59:56.028+05:30  INFO 11452 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-04-27T00:59:57.622+05:30  INFO 11452 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-27T00:59:57.638+05:30  INFO 11452 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-27T00:59:58.522+05:30  WARN 11452 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-27T00:59:59.595+05:30  INFO 11452 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2023-04-27T00:59:59.711+05:30  INFO 11452 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-27T00:59:59.714+05:30  INFO 11452 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-04-27T00:59:59.722+05:30  INFO 11452 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2023-04-27T00:59:59.798+05:30  INFO 11452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-04-27T00:59:59.832+05:30  INFO 11452 --- [main] com.contact.manager.ManagerApplication   : Started ManagerApplication in 9.358 seconds (process running for 10.141)
-2023-04-27T01:00:32.816+05:30  INFO 11452 --- [http-nio-8080-exec-2] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:00:35.779+05:30  INFO 11452 --- [http-nio-8080-exec-5] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:00:39.335+05:30  INFO 11452 --- [http-nio-8080-exec-4] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:01:10.017+05:30  WARN 11452 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.contact.manager.entities.ContactGroup` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('[object Object]')]
-2023-04-27T01:01:59.362+05:30  INFO 11452 --- [http-nio-8080-exec-8] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:05:05.366+05:30  INFO 11452 --- [http-nio-8080-exec-9] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:11:21.090+05:30  INFO 11452 --- [http-nio-8080-exec-5] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:11:31.340+05:30  INFO 11452 --- [http-nio-8080-exec-4] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:11:36.522+05:30  INFO 11452 --- [http-nio-8080-exec-3] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:11:39.985+05:30  INFO 11452 --- [http-nio-8080-exec-8] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:12:09.856+05:30  INFO 11452 --- [http-nio-8080-exec-9] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:12:16.630+05:30  INFO 11452 --- [http-nio-8080-exec-5] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:14:01.117+05:30  INFO 11452 --- [http-nio-8080-exec-4] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:14:09.852+05:30  WARN 11452 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.contact.manager.entities.ContactGroup` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('[object Object]')]
-2023-04-27T01:14:32.118+05:30  INFO 11452 --- [http-nio-8080-exec-10] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:14:42.286+05:30  INFO 11452 --- [http-nio-8080-exec-6] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:14:49.099+05:30  WARN 11452 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.contact.manager.entities.ContactGroup` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('[object Object]')]
-2023-04-27T01:15:08.657+05:30  INFO 11452 --- [http-nio-8080-exec-5] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:15:15.471+05:30  WARN 11452 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.contact.manager.entities.ContactGroup` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('[object Object]')]
-2023-04-27T01:15:30.888+05:30  INFO 11452 --- [http-nio-8080-exec-7] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:16:28.972+05:30  INFO 11452 --- [http-nio-8080-exec-10] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:18:34.140+05:30  INFO 11452 --- [http-nio-8080-exec-6] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:18:59.957+05:30  INFO 11452 --- [http-nio-8080-exec-2] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:20:38.129+05:30  INFO 11452 --- [http-nio-8080-exec-1] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:21:16.675+05:30  INFO 11452 --- [http-nio-8080-exec-7] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:21:24.095+05:30  INFO 11452 --- [http-nio-8080-exec-3] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:21:40.607+05:30  INFO 11452 --- [http-nio-8080-exec-8] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:22:09.677+05:30  INFO 11452 --- [http-nio-8080-exec-9] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:22:36.520+05:30  INFO 11452 --- [http-nio-8080-exec-1] c.c.m.controllers.ContactController      : Contact(id=null, name=aksss, email=akss@test, url=null, phoneNumber=1213, company=Khudki, title=CEO, contactGroup=null)
+2023-05-09T00:14:57.008+05:30  INFO 4196 --- [main] com.contact.manager.ManagerApplication   : Starting ManagerApplication using Java 17.0.5 with PID 4196 (C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager\target\classes started by amitd in C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager)
+2023-05-09T00:14:57.026+05:30  INFO 4196 --- [main] com.contact.manager.ManagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-09T00:14:59.505+05:30  INFO 4196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-09T00:14:59.682+05:30  INFO 4196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 3 JPA repository interfaces.
+2023-05-09T00:15:01.613+05:30  INFO 4196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-09T00:15:01.658+05:30  INFO 4196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-09T00:15:01.660+05:30  INFO 4196 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-05-09T00:15:01.942+05:30  INFO 4196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-09T00:15:01.944+05:30  INFO 4196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4702 ms
+2023-05-09T00:15:02.797+05:30  INFO 4196 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-09T00:15:03.064+05:30  INFO 4196 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-09T00:15:04.185+05:30  INFO 4196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-09T00:15:05.059+05:30  INFO 4196 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29b8df5
+2023-05-09T00:15:05.069+05:30  INFO 4196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-09T00:15:05.391+05:30  INFO 4196 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-09T00:15:07.057+05:30  INFO 4196 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-09T00:15:07.081+05:30  INFO 4196 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-09T00:15:08.143+05:30  WARN 4196 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-09T00:15:09.625+05:30  INFO 4196 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-09T00:15:09.854+05:30  INFO 4196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-09T00:15:09.888+05:30  INFO 4196 --- [main] com.contact.manager.ManagerApplication   : Started ManagerApplication in 13.68 seconds (process running for 14.975)
+2023-05-09T00:15:11.108+05:30  INFO 4196 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09T00:15:11.110+05:30  INFO 4196 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-09T00:15:11.117+05:30  INFO 4196 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-05-09T00:15:30.166+05:30  INFO 4196 --- [http-nio-8080-exec-3] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => Contact(id=1, name=amit, email=amit@123, url=null, phoneNumber=123456789, company=null, title=null, contactGroup=ContactGroup(id=1, name=collegue))
+2023-05-09T00:15:31.375+05:30  INFO 4196 --- [http-nio-8080-exec-1] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T00:15:49.048+05:30  INFO 4196 --- [http-nio-8080-exec-4] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
+2023-05-09T00:16:21.249+05:30  INFO 4196 --- [http-nio-8080-exec-7] c.c.m.controllers.ContactController      : Contact(id=null, name=AMIT DOKE, email=amitdoke121@gmail.com, url=asd, phoneNumber=1231243123, company=Ubisoft, title=CEO, contactGroup=null)
+1
+4
+2023-05-09T00:16:21.423+05:30  INFO 4196 --- [http-nio-8080-exec-7] c.c.m.controllers.ContactController      : User Contact successfully created for User Id => 1
+2023-05-09T00:16:25.558+05:30  INFO 4196 --- [http-nio-8080-exec-8] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T00:16:38.199+05:30  INFO 4196 --- [http-nio-8080-exec-10] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
+2023-05-09T00:17:05.020+05:30  INFO 4196 --- [http-nio-8080-exec-2] c.c.m.controllers.ContactController      : Contact(id=null, name=AMIY, email=ami234, url=asd, phoneNumber=123423532, company=euuu, title=CEO, contactGroup=null)
+1
+5
+2023-05-09T00:17:05.046+05:30  INFO 4196 --- [http-nio-8080-exec-2] c.c.m.controllers.ContactController      : User Contact successfully created for User Id => 1
+2023-05-09T00:17:06.450+05:30  INFO 4196 --- [http-nio-8080-exec-4] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T00:18:04.645+05:30  INFO 4196 --- [http-nio-8080-exec-6] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T00:18:06.458+05:30  INFO 4196 --- [http-nio-8080-exec-7] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T00:25:47.774+05:30  INFO 13076 --- [main] com.contact.manager.ManagerApplication   : Starting ManagerApplication using Java 17.0.5 with PID 13076 (C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager\target\classes started by amitd in C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager)
+2023-05-09T00:25:47.780+05:30  INFO 13076 --- [main] com.contact.manager.ManagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-09T00:25:49.479+05:30  INFO 13076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-09T00:25:49.634+05:30  INFO 13076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 3 JPA repository interfaces.
+2023-05-09T00:25:50.530+05:30  INFO 13076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-09T00:25:50.553+05:30  INFO 13076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-09T00:25:50.555+05:30  INFO 13076 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-05-09T00:25:50.748+05:30  INFO 13076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-09T00:25:50.750+05:30  INFO 13076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2864 ms
+2023-05-09T00:25:51.258+05:30  INFO 13076 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-09T00:25:51.383+05:30  INFO 13076 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-09T00:25:52.094+05:30  INFO 13076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-09T00:25:52.582+05:30  INFO 13076 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f2ca6f8
+2023-05-09T00:25:52.587+05:30  INFO 13076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-09T00:25:52.707+05:30  INFO 13076 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-09T00:25:53.925+05:30  INFO 13076 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-09T00:25:53.941+05:30  INFO 13076 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-09T00:25:54.599+05:30  WARN 13076 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-09T00:25:55.444+05:30  INFO 13076 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-09T00:25:55.635+05:30  INFO 13076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-09T00:25:55.660+05:30  INFO 13076 --- [main] com.contact.manager.ManagerApplication   : Started ManagerApplication in 8.577 seconds (process running for 9.848)
+2023-05-09T00:25:55.751+05:30  INFO 13076 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09T00:25:55.754+05:30  INFO 13076 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-09T00:25:55.764+05:30  INFO 13076 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-05-09T00:26:27.717+05:30  INFO 13076 --- [http-nio-8080-exec-1] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
+2023-05-09T00:27:15.120+05:30  INFO 13076 --- [http-nio-8080-exec-5] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
+2023-05-09T00:27:45.675+05:30  INFO 13076 --- [http-nio-8080-exec-8] c.c.m.controllers.ContactController      : Contact(id=5, name=a, email=a, url=a, phoneNumber=12, company=a, title=a, contactGroup=null)
 1
 1
-2023-04-27T01:22:36.671+05:30  INFO 11452 --- [http-nio-8080-exec-1] c.c.m.controllers.ContactController      : User Contact successfully created for User Id => 1
-2023-04-27T01:22:40.483+05:30  INFO 11452 --- [http-nio-8080-exec-4] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
-2023-04-27T01:23:04.639+05:30  INFO 11452 --- [http-nio-8080-exec-7] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => Contact(id=1, name=amit, email=amit@123, url=null, phoneNumber=123456789, company=null, title=null, contactGroup=ContactGroup(id=1, name=collegue))
-2023-04-27T01:23:06.998+05:30  INFO 11452 --- [http-nio-8080-exec-3] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
-2023-04-27T01:23:08.268+05:30  INFO 11452 --- [http-nio-8080-exec-10] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => Contact(id=3, name=aksss, email=akss@test, url=null, phoneNumber=1213, company=Khudki, title=CEO, contactGroup=ContactGroup(id=1, name=collegue))
-2023-04-27T01:23:12.111+05:30  INFO 11452 --- [http-nio-8080-exec-8] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
-2023-04-27T01:23:29.654+05:30  INFO 11452 --- [http-nio-8080-exec-6] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
-2023-04-27T01:23:32.815+05:30  INFO 11452 --- [http-nio-8080-exec-9] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
-2023-04-27T01:23:33.962+05:30  INFO 11452 --- [http-nio-8080-exec-2] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
-2023-04-27T01:23:35.945+05:30  INFO 11452 --- [http-nio-8080-exec-5] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T00:27:45.762+05:30 ERROR 13076 --- [http-nio-8080-exec-8] c.c.m.controllers.ContactController      : Multiple representations of the same entity [com.contact.manager.entities.Contact#5] are being merged. Managed: [Contact(id=5, name=a, email=a, url=a, phoneNumber=12, company=a, title=a, contactGroup=ContactGroup(id=1, name=collegue))]; Detached: [Contact(id=5, name=a, email=a, url=a, phoneNumber=12, company=a, title=a, contactGroup=ContactGroup(id=1, name=collegue))]
+
+org.springframework.dao.InvalidDataAccessApiUsageException: Multiple representations of the same entity [com.contact.manager.entities.Contact#5] are being merged. Managed: [Contact(id=5, name=a, email=a, url=a, phoneNumber=12, company=a, title=a, contactGroup=ContactGroup(id=1, name=collegue))]; Detached: [Contact(id=5, name=a, email=a, url=a, phoneNumber=12, company=a, title=a, contactGroup=ContactGroup(id=1, name=collegue))]
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:368) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:234) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-6.0.7.jar:6.0.7]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-6.0.7.jar:6.0.7]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:163) ~[spring-data-jpa-3.0.4.jar:3.0.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218) ~[spring-aop-6.0.7.jar:6.0.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy123.save(Unknown Source) ~[na:na]
+	at com.contact.manager.controllers.ContactController.updateContact(ContactController.java:96) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:566) ~[tomcat-embed-core-10.1.7.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631) ~[tomcat-embed-core-10.1.7.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.lang.IllegalStateException: Multiple representations of the same entity [com.contact.manager.entities.Contact#5] are being merged. Managed: [Contact(id=5, name=a, email=a, url=a, phoneNumber=12, company=a, title=a, contactGroup=ContactGroup(id=1, name=collegue))]; Detached: [Contact(id=5, name=a, email=a, url=a, phoneNumber=12, company=a, title=a, contactGroup=ContactGroup(id=1, name=collegue))]
+	at org.hibernate.event.internal.EntityCopyNotAllowedObserver.entityCopyDetected(EntityCopyNotAllowedObserver.java:45) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.event.spi.MergeContext.put(MergeContext.java:235) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsPersistent(DefaultMergeEventListener.java:208) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:184) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:851) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:822) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.spi.CascadingActions$6.cascade(CascadingActions.java:264) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.spi.CascadingActions$6.cascade(CascadingActions.java:254) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:513) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:434) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:547) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:477) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:437) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:153) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.cascadeOnMerge(DefaultMergeEventListener.java:562) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsPersistent(DefaultMergeEventListener.java:210) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:184) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:81) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:830) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:816) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360) ~[spring-orm-6.0.7.jar:6.0.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy119.merge(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-6.0.7.jar:6.0.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy119.merge(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:616) ~[spring-data-jpa-3.0.4.jar:3.0.4]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:288) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:77) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.7.jar:6.0.7]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.7.jar:6.0.7]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.7.jar:6.0.7]
+	... 62 common frames omitted
+
+2023-05-09T00:46:16.090+05:30  INFO 13572 --- [main] com.contact.manager.ManagerApplication   : Starting ManagerApplication using Java 17.0.5 with PID 13572 (C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager\target\classes started by amitd in C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager)
+2023-05-09T00:46:16.098+05:30  INFO 13572 --- [main] com.contact.manager.ManagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-09T00:46:18.074+05:30  INFO 13572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-09T00:46:18.333+05:30  INFO 13572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 206 ms. Found 3 JPA repository interfaces.
+2023-05-09T00:46:19.365+05:30  INFO 13572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-09T00:46:19.391+05:30  INFO 13572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-09T00:46:19.393+05:30  INFO 13572 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-05-09T00:46:19.596+05:30  INFO 13572 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-09T00:46:19.598+05:30  INFO 13572 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3385 ms
+2023-05-09T00:46:20.163+05:30  INFO 13572 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-09T00:46:20.248+05:30  INFO 13572 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-09T00:46:20.748+05:30  INFO 13572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-09T00:46:21.255+05:30  INFO 13572 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bbb42b4
+2023-05-09T00:46:21.263+05:30  INFO 13572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-09T00:46:21.357+05:30  INFO 13572 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-09T00:46:22.479+05:30  INFO 13572 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-09T00:46:22.492+05:30  INFO 13572 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-09T00:46:23.257+05:30  WARN 13572 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-09T00:46:24.388+05:30  INFO 13572 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-09T00:46:24.572+05:30  INFO 13572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-09T00:46:24.593+05:30  INFO 13572 --- [main] com.contact.manager.ManagerApplication   : Started ManagerApplication in 9.086 seconds (process running for 9.78)
+2023-05-09T00:46:24.692+05:30  INFO 13572 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09T00:46:24.696+05:30  INFO 13572 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-09T00:46:24.702+05:30  INFO 13572 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-05-09T00:48:02.385+05:30  INFO 13572 --- [http-nio-8080-exec-2] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
+2023-05-09T00:48:03.141+05:30  INFO 13572 --- [http-nio-8080-exec-1] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T00:48:14.923+05:30  INFO 13572 --- [http-nio-8080-exec-3] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => [ContactGroup(id=1, name=collegue), ContactGroup(id=2, name=college), ContactGroup(id=3, name=friend), ContactGroup(id=4, name=service), ContactGroup(id=5, name=community), ContactGroup(id=6, name=family)]
+2023-05-09T00:48:25.922+05:30  INFO 13572 --- [http-nio-8080-exec-6] c.c.m.controllers.ContactController      : Contact(id=4, name=as, email=das, url=das, phoneNumber=12312, company=as, title=asdasfd, contactGroup=null)
+1
+1
+2023-05-09T00:48:25.975+05:30  INFO 13572 --- [http-nio-8080-exec-6] c.c.m.controllers.ContactController      : User Contact successfully created for User Id => Contact(id=4, name=as, email=das, url=das, phoneNumber=12312, company=as, title=asdasfd, contactGroup=null)
+2023-05-09T00:48:27.347+05:30  INFO 13572 --- [http-nio-8080-exec-7] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T01:02:54.591+05:30  INFO 13572 --- [http-nio-8080-exec-10] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T01:03:12.991+05:30  INFO 13572 --- [http-nio-8080-exec-2] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T01:03:20.824+05:30  INFO 13572 --- [http-nio-8080-exec-1] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T01:14:29.614+05:30  INFO 13424 --- [main] com.contact.manager.ManagerApplication   : Starting ManagerApplication using Java 17.0.5 with PID 13424 (C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager\target\classes started by amitd in C:\Users\amitd\Desktop\JAVA Full stack\angular project\contact-manager\manager)
+2023-05-09T01:14:29.619+05:30  INFO 13424 --- [main] com.contact.manager.ManagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-05-09T01:14:31.747+05:30  INFO 13424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-09T01:14:31.898+05:30  INFO 13424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 3 JPA repository interfaces.
+2023-05-09T01:14:33.139+05:30  INFO 13424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-09T01:14:33.172+05:30  INFO 13424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-09T01:14:33.175+05:30  INFO 13424 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-05-09T01:14:33.369+05:30  INFO 13424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-09T01:14:33.371+05:30  INFO 13424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3627 ms
+2023-05-09T01:14:33.931+05:30  INFO 13424 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-09T01:14:34.066+05:30  INFO 13424 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-09T01:14:34.867+05:30  INFO 13424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-09T01:14:35.507+05:30  INFO 13424 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d2f9e3c
+2023-05-09T01:14:35.513+05:30  INFO 13424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-09T01:14:35.660+05:30  INFO 13424 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-09T01:14:37.311+05:30  INFO 13424 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-09T01:14:37.334+05:30  INFO 13424 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-09T01:14:38.035+05:30  WARN 13424 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-09T01:14:39.429+05:30  INFO 13424 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-09T01:14:39.648+05:30  INFO 13424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-09T01:14:39.670+05:30  INFO 13424 --- [main] com.contact.manager.ManagerApplication   : Started ManagerApplication in 10.78 seconds (process running for 11.519)
+2023-05-09T01:14:41.254+05:30  INFO 13424 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09T01:14:41.257+05:30  INFO 13424 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-09T01:14:41.260+05:30  INFO 13424 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-09T01:15:06.152+05:30  INFO 13424 --- [http-nio-8080-exec-2] c.c.m.controllers.ContactController      : Getting Contact List of User with UserId => 1
+2023-05-09T01:15:09.514+05:30  INFO 13424 --- [http-nio-8080-exec-4] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => true
+2023-05-09T01:15:13.760+05:30  INFO 13424 --- [http-nio-8080-exec-7] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => true
+2023-05-09T01:15:18.916+05:30  INFO 13424 --- [http-nio-8080-exec-9] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => true
+2023-05-09T01:15:22.023+05:30  INFO 13424 --- [http-nio-8080-exec-2] c.c.m.controllers.ContactController      : Getting Contact List of Contact with contactId => true

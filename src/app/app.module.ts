@@ -12,6 +12,10 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import {HttpClientModule} from "@angular/common/http";
 import { FormsModule } from '@angular/forms';
+import { EntryPageComponent } from './components/entry-page/entry-page.component';
+import { LoginComponent } from './components/entry-page/login/login.component';
+import { RegisterComponent } from './components/entry-page/register/register.component';
+import { ForgotComponent } from './components/entry-page/forgot/forgot.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { FormsModule } from '@angular/forms';
     EditContactComponent,
     ViewContactComponent,
     SpinnerComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    EntryPageComponent,
+    LoginComponent,
+    RegisterComponent,
+    ForgotComponent
   ],
   imports: [
     BrowserModule,
